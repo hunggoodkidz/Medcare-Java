@@ -1,7 +1,7 @@
 # Medcare - Java Spring Boot
 
 
-<img src="/image/home-img" align="left"
+<img src="/image/app_icon.jpg" align="left"
 width="200" height="200" hspace="10" vspace="10">
 
 Medcare is the website for ordering medicines.  
