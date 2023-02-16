@@ -1,2 +1,2 @@
 # cdcnpm
-Chua biet gi het
+Tuan Lee lgbt
