@@ -1,8 +1,8 @@
 # Medcare - Java Spring Boot
 
 
-<img src="/image/app_icon.jpg" align="left"
-width="200" height="200" hspace="10" vspace="10">
+[<img src="https://github.com/hunggoodkidz/Medcare-Java/raw/ChanHung-Ninzy/image/app_icon.jpg" align="left"
+width="200" height="200" hspace="10" vspace="10">](https://github.com/hunggoodkidz/Medcare-Java/raw/ChanHung-Ninzy/image/app_icon.jpg)
 
 Medcare is the website for ordering medicines.  
 It wil be free and open source soon after the final of the project.  
