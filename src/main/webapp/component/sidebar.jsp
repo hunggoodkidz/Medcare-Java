@@ -24,12 +24,14 @@
 
           </ul>
         </li>
-        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">Specialist</span></a>
+        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">User Account</span></a>
           <ul aria-expanded="false" class="collapse">
-            <li><a href="specialist_list.jsp">Add Specialist</a></li>
+            <li><a href="user_list.jsp">User Account List</a></li>
+            <li><a href="add_user.jsp">Add User Account</a></li>
 
           </ul>
         </li>
+        <li> <a href="specialist_list.jsp"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Specialist</span></a></li>
 
 
       </ul>
