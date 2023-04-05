@@ -55,16 +55,16 @@
     </div>
 
     <div class="content">
-        <h3>stay safe, stay healthy</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sed autem vero? Magnam, est laboriosam!</p>
-        <a href="#" class="btn"> contact us <span class="fas fa-chevron-right"></span> </a>
+        <h3>Stay healthy, stay stronger and better</h3>
+        <p>Taking care of yourself is important more than everything!</p>
+        <a href="user_appointment.jsp" class="btn"> Make appointment <span class="fas fa-chevron-right"></span> </a>
     </div>
 
 </section>
 
 <section class="services" id="services">
 
-    <h1 class="heading"> Các <span>Dịch vụ</span> </h1>
+    <h1 class="heading"> Our <span>Services</span> </h1>
 
     <div class="box-container">
 
@@ -125,9 +125,9 @@
         </div>
 
         <div class="content">
-            <h3>we take care of your healthy life</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ducimus, quod ex cupiditate ullam in assumenda maiores et culpa odit tempora ipsam qui, quisquam quis facere iste fuga, minus nesciunt.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus vero ipsam laborum porro voluptates voluptatibus a nihil temporibus deserunt vel?</p>
+            <h3>We take care of your healthy life</h3>
+            <p>Medcare is a Management System that help you easily book appointment on time </p>
+            <p>We're still looking for progress to provide the better ideas and good resources to the clients</p>
             <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
         </div>
 
@@ -138,7 +138,7 @@
 
 		<section class="doctors" id="doctors">
 
-    <h1 class="heading"> Các <span>bác sĩ</span> </h1>
+    <h1 class="heading"> Our <span>Doctors</span> </h1>
 
     <div class="box-container">
 
