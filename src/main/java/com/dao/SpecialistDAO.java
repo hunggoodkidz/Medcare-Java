@@ -45,6 +45,7 @@ public class SpecialistDAO {
 			String sql = "update specialist set spec_name=? where id=?";
 			PreparedStatement ps = conn.prepareStatement(sql);
 			ps.setString(1, d.getSpecialistName());
+			ps.setInt(2, d.getId());
 			int i = ps.executeUpdate();
 
 			if (i == 1) {

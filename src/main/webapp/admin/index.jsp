@@ -70,7 +70,7 @@
                     <span><i class="fa fa-calendar f-s-40"></i></span>
                   </div>
                   <div class="media-body media-text-right">
-                    <h2>Total Appointment <br><%=dao.countAppointment()%></h2>
+                    <h2>Appointment <br><%=dao.countAppointment()%></h2>
                   </div>
                 </div>
               </div>

@@ -81,7 +81,7 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label class="control-label">Qualification </label>
-                    <input type="text" required name="qualification" class="form-control" placeholder="doe">
+                    <input type="text" required name="qualification" class="form-control" placeholder="MBBS">
                   </div>
                 </div>
                 <!--/span-->

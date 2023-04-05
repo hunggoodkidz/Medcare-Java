@@ -11,7 +11,7 @@ public class DBConnector {
 	public static Connection getConn() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital_2","root","");
+			conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/medcare_hospital","root","");
 			state = conn.createStatement();
 			
 		}catch(Exception e){
