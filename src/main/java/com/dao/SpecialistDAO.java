@@ -80,7 +80,7 @@ public class SpecialistDAO {
 		Specialist d = null;
 		try {
 
-			String sql = "select * from doctor where id=?";
+			String sql = "select * from specialist where id=?";
 			PreparedStatement ps = conn.prepareStatement(sql);
 			ps.setInt(1, id);
 			ResultSet rs = ps.executeQuery();
