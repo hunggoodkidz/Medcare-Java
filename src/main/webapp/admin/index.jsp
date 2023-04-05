@@ -1,127 +1,111 @@
 <%@page import="com.db.DBConnector"%>
 <%@page import="com.dao.DoctorDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+         pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<%@include file="../component/allcss.jsp"%>
-<style type="text/css">
-.paint-card {
-	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-}
-</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Admin Panel</title>
+  <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="css/helper.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-	<%@include file="navbar.jsp"%>
 
-	<c:if test="${ empty adminObj }">
-		<c:redirect url="../admin_login.jsp"></c:redirect>
-	</c:if>
+<body class="fix-header">
 
-	<div class="container p-5">
-		<p class="text-center fs-3">Admin Dashboard</p>
-		<c:if test="${not empty errorMsg}">
-			<p class="fs-3 text-center text-danger">${errorMsg}</p>
-			<c:remove var="errorMsg" scope="session" />
-		</c:if>
-		<c:if test="${not empty succMsg}">
-			<div class="fs-3 text-center text-success" role="alert">${succMsg}</div>
-			<c:remove var="succMsg" scope="session" />
-		</c:if>
-		<%
+<%@include file="../component/navbaradmin.jsp"%>
+  <%@include file="../component/sidebar.jsp"%>
+
+  <div class="page-wrapper">
+
+
+      <%
 		DoctorDAO dao = new DoctorDAO(DBConnector.getConn());
 		%>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="card paint-card">
-					<div class="card-body text-center text-success">
-						<i class="fas fa-user-md fa-3x"></i><br>
-						<p class="fs-4 text-center">
-							Doctor <br><%=dao.countDoctor()%>
-						</p>
-					</div>
-				</div>
-			</div>
+
+    <div class="container-fluid">
+      <div class="col-lg-12">
+        <div class="card card-outline-primary">
+          <div class="card-header">
+            <h4 class="m-b-0 text-white">Admin Dashboard</h4>
+          </div>
+          <div class="row">
+
+            <div class="col-md-3">
+              <div class="card p-30">
+                <div class="media">
+                  <div class="media-left meida media-middle">
+                    <span><i class="fa fa-user-md fa-3x "></i></span>
+                  </div>
+                  <div class="media-body media-text-right">
+                    <h2>Doctor <br><%=dao.countDoctor()%></h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card p-30">
+                <div class="media">
+                  <div class="media-left meida media-middle">
+                    <span><i class="fa fa-users f-s-40" aria-hidden="true"></i></span>
+                  </div>
+                  <div class="media-body media-text-right">
+                    <h2>User <br><%=dao.countUSer()%> </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card p-30">
+                <div class="media">
+                  <div class="media-left meida media-middle">
+                    <span><i class="fa fa-calendar f-s-40"></i></span>
+                  </div>
+                  <div class="media-body media-text-right">
+                    <h2>Total Appointment <br><%=dao.countAppointment()%></h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card p-30">
+                <div class="media">
+                  <div class="media-left meida media-middle">
+                    <span><i class="fa fa-calendar f-s-40"></i></span>
+                  </div>
+                  <div class="media-body media-text-right">
+                    <h2>Specialist <br><%=dao.countSpecialist()%></h2>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
+          </div>
+        </div>
+      </div>
+    </div>
 
-			<div class="col-md-4">
-				<div class="card paint-card">
-					<div class="card-body text-center text-success">
-						<i class="fas fa-user-circle fa-3x"></i><br>
-						<p class="fs-4 text-center">
-							User <br><%=dao.countUSer()%>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="card paint-card">
-					<div class="card-body text-center text-success">
-						<i class="far fa-calendar-check fa-3x"></i><br>
-						<p class="fs-4 text-center">
-							Total Appointment <br><%=dao.countAppointment()%>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4 mt-2">
-
-				<div class="card paint-card " data-bs-toggle="modal"
-					data-bs-target="#exampleModal">
-					<div class="card-body text-center text-success">
-						<i class="far fa-calendar-check fa-3x"></i><br>
-						<p class="fs-4 text-center">
-							Specialist <br><%=dao.countSpecialist()%>
-						</p>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-	</div>
-
-
-
-	<!-- Modal -->
-	<div class="modal fade" id="exampleModal" tabindex="-1"
-		aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal"
-						aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					<form action="../addSpecialist" method="post">
-
-						<div class="form-group">
-							<label>Enter Specialist Name</label> <input type="text"
-								name="specName" class="form-control">
-						</div>
-						<div class="text-center mt-3">
-							<button type="submit" class="btn btn-primary">Add</button>
-						</div>
-
-					</form>
-
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary"
-						data-bs-dismiss="modal">Close</button>
-
-				</div>
-			</div>
-		</div>
-	</div>
-
+    <script src="js/lib/jquery/jquery.min.js"></script>
+    <script src="js/lib/bootstrap/js/popper.min.js"></script>
+    <script src="js/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+    <script src="js/sidebarmenu.js"></script>
+    <script src="js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="js/custom.min.js"></script>
 
 </body>
+
 </html>
+<?php
+}
+?>

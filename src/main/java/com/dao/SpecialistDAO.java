@@ -4,6 +4,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.entity.Doctor;
 import com.entity.Specialist;
 public class SpecialistDAO {
 
@@ -35,6 +36,66 @@ public class SpecialistDAO {
 		}
 		
 		return f;
+	}
+	public boolean updateSpecialist(Specialist d) {
+		boolean f = false;
+
+		try {
+
+			String sql = "update specialist set spec_name=? where id=?";
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ps.setString(1, d.getSpecialistName());
+			int i = ps.executeUpdate();
+
+			if (i == 1) {
+				f = true;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return f;
+	}
+	public boolean deleteSpecialist(int id) {
+		boolean f = false;
+		try {
+			String sql = "delete from specialist where id=?";
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ps.setInt(1, id);
+
+			int i = ps.executeUpdate();
+			if (i == 1) {
+				f = true;
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return f;
+	}
+
+	public Specialist getSpecialistById(int id) {
+
+		Specialist d = null;
+		try {
+
+			String sql = "select * from doctor where id=?";
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ps.setInt(1, id);
+			ResultSet rs = ps.executeQuery();
+
+			while (rs.next()) {
+				d = new Specialist();
+				d.setId(rs.getInt(1));
+				d.setSpecialistName(rs.getString(2));
+
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return d;
 	}
 	
 		public List<Specialist> getAllSpecialist() {

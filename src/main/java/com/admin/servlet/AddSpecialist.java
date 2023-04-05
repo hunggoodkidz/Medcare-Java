@@ -23,14 +23,15 @@ public class AddSpecialist extends HttpServlet {
 		SpecialistDAO dao = new SpecialistDAO(DBConnector.getConn());
 		boolean f = dao.addSpecialist(specName);
 
+
 		HttpSession session = req.getSession();
 
 		if (f) {
 			session.setAttribute("succMsg", "Specialist Added");
-			resp.sendRedirect("admin/index.jsp");
+			resp.sendRedirect("admin/specialist_list.jsp");
 		} else {
 			session.setAttribute("errorMsg", "something wrong on server");
-			resp.sendRedirect("admin/index.jsp");
+			resp.sendRedirect("admin/specialist_list.jsp");
 		}
 
 	}

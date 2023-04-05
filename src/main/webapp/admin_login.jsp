@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <title>Admin Login Page</title>
 <%@include file="component/allcss2.jsp"%>
 <style type="text/css">

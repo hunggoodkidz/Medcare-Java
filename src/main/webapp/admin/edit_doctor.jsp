@@ -4,12 +4,12 @@
 <%@page import="java.util.List"%>
 <%@page import="com.db.DBConnector"%>
 <%@page import="com.dao.SpecialistDAO"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+	<meta charset="UTF-8">
 <title>Insert title here</title>
 <%@include file="../component/allcss.jsp"%>
 <style type="text/css">

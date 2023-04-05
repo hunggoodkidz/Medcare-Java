@@ -69,6 +69,7 @@
 
 						<div class="text-center pt-4">
 							<p class="fs-6">Don't have an account? <a href="signup.jsp" class="text-decoration-none">Create one</a></p>
+							<p class="fs-6">Admin site ? <a href="admin_login.jsp" class="text-decoration-none">here</a></p>
 							<a href="doctor_login.jsp" class="btn btn-create text-white col-md-12">I am a Doctor</a>
 						</div>
 

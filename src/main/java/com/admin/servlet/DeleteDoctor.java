@@ -25,10 +25,10 @@ public class DeleteDoctor extends HttpServlet {
 
 		if (dao.deleteDoctor(id)) {
 			session.setAttribute("succMsg", "Doctor Delete Sucessfully..");
-			resp.sendRedirect("admin/view_doctor.jsp");
+			resp.sendRedirect("admin/doctor_list.jsp");
 		} else {
 			session.setAttribute("errorMsg", "something wrong on server");
-			resp.sendRedirect("admin/view_doctor.jsp");
+			resp.sendRedirect("admin/doctor_list.jsp");
 		}
 		
 
