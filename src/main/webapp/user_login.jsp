@@ -1,21 +1,40 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@page isELIgnored="false"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <title>User Login Page</title>
-<%@include file="component/allcss.jsp"%>
+<%@include file="component/allcss2.jsp"%>
 <style type="text/css">
 .paint-card {
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
+
+/* Add this style to move the login form below the navbar */
+.container {
+	margin-top: 80px;
+}
+
+.btn-create {
+	background-color: #6c757d;
+	color: #fff;
+	border-color: #6c757d;
+}
+.btn:hover {
+    background-color: #138496;
+    border-color: #138496;
+    color: #fff;
+}
+
+.btn-create:hover {
+	background-color: #5a6268;
+	border-color: #545b62;
+}
 </style>
 </head>
 <body>
-	<%@include file="component/navbar.jsp"%>
+	<%@include file="component/navbar2.jsp"%>
 
 	<div class="container p-5">
 		<div class="row">
@@ -48,8 +67,10 @@
 							<button type="submit" class="btn bg-success text-white col-md-12">Login</button>
 						</form>
 
-						<br> Don't have an account? <a href="signup.jsp"
-							class="text-decoration-none"> create one</a>
+						<div class="text-center pt-4">
+							<p class="fs-6">Don't have an account? <a href="signup.jsp" class="text-decoration-none">Create one</a></p>
+							<a href="doctor_login.jsp" class="btn btn-create text-white col-md-12">I am a Doctor</a>
+						</div>
 
 					</div>
 				</div>

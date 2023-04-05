@@ -7,16 +7,19 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<%@include file="component/allcss.jsp"%>
+<%@include file="component/allcss2.jsp"%>
 
 <style type="text/css">
 .paint-card {
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
+.container{
+	margin-top: 80px;
+}
 </style>
 </head>
 <body>
-	<%@include file="component/navbar.jsp"%>
+	<%@include file="component/navbar2.jsp"%>
 
 	<c:if test="${ empty userObj }">
 		<c:redirect url="user_login.jsp"></c:redirect>

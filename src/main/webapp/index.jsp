@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Index Page</title>
-<%@include file="component/allcss.jsp" %>
+<%@include file="component/allcss2.jsp" %>
 
 <style type="text/css">
 .paint-card {
@@ -17,7 +17,7 @@
 
 </head>
 <body>
-<%@include file="component/navbar.jsp" %>
+<%@include file="component/navbar2.jsp" %>
 <%Connection conn=DBConnector.getConn(); 
 %>
 
@@ -29,13 +29,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/blog-1.jpg" class="d-block w-100" alt="..." height="600px">
+      <img src="img/doctor-background1.jpg" class="d-block w-100" alt="..." height="600px">
     </div>
     <div class="carousel-item">
-      <img src="img/blog-2.jpg" class="d-block w-100" alt="..." height="600px">
+      <img src="img/doctor-background2.jpg" class="d-block w-100" alt="..." height="600px">
     </div>
     <div class="carousel-item">
-      <img src="img/blog-3.jpg" class="d-block w-100" alt="..." height="600px">
+      <img src="img/doctor-background3.jpg" class="d-block w-100" alt="..." height="600px">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -48,99 +48,175 @@
   </button>
 </div>
 
-<div class="container p-3">
-		<p class="text-center fs-2 ">Nguyện vọng ở bệnh xá chúng tôi</p>
+<section class="home" id="home">
 
-		<div class="row">
-			<div class="col-md-8 p-5">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="card paint-card">
-							<div class="card-body">
-								<p class="fs-5">100% Đảm bảo sức khỏe an toàn</p>
-								<p>Chích 1 phát là lên tầng mây </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="card paint-card">
-							<div class="card-body">
-								<p class="fs-5">Môi trường sạch sẽ</p>
-								<p>Không có gì khiến bạn bị ho lao chỉ khi hít phải vào keo con chó</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 mt-2">
-						<div class="card paint-card">
-							<div class="card-body">
-								<p class="fs-5">Các bác sĩ thân thiện</p>
-								<p>Ai cũng vậy hết, trong luật chơi có tiền là có quyền, không có thì cút</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 mt-2">
-						<div class="card paint-card">
-							<div class="card-body">
-								<p class="fs-5">Liều chữa tiên tiến</p>
-								<p>Chúng tôi có sỡ hữu hàng loạt vaccin nhưng dành cho nhà giàu, nghèo thì cạp đất mà ăn</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+    <div class="image">
+        <img src="img/home-img.svg" alt="">
+    </div>
 
-			<div class="col-md-4">
-				<img alt="" src="img/doc-6.jpg">
-			</div>
-<hr>
+    <div class="content">
+        <h3>stay safe, stay healthy</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sed autem vero? Magnam, est laboriosam!</p>
+        <a href="#" class="btn"> contact us <span class="fas fa-chevron-right"></span> </a>
+    </div>
 
-	<div class="container p-2">
-		<p class="text-center fs-2 ">Our Team</p>
-		
-		<div class="row">
-			<div class="col-md-3">
-				<div class="card paint-card">
-					<div class="card-body text-center">
-						<img src="img/dr-hung.jpg" width="250px" height="300px">
-						<p class="fw-bold fs-5">Dr. Hưng PC</p>
-						<p class="fs-7">(CEO & Chairman)</p>
-					</div>
-				</div>
-			</div>
+</section>
 
-			<div class="col-md-3">
-				<div class="card paint-card">
-					<div class="card-body text-center">
-						<img src="img/doc-2.jpg" width="250px" height="300px">
-						<p class="fw-bold fs-5">Dr.Siva Kumar</p>
-						<p class="fs-7">(Chief Doctor)</p>
-					</div>
-				</div>
-			</div>
+<section class="services" id="services">
 
-			<div class="col-md-3">
-				<div class="card paint-card">
-					<div class="card-body text-center">
-						<img src="img/doc-3.jpg" width="250px" height="300px">
-						<p class="fw-bold fs-5">Dr. Niuise Paule</p>
-						<p class="fs-7">(Chief Doctor)</p>
-					</div>
-				</div>
-			</div>
+    <h1 class="heading"> Các <span>Dịch vụ</span> </h1>
 
-			<div class="col-md-3">
-				<div class="card paint-card">
-					<div class="card-body text-center">
-						<img src="img/doc-4.jpg" width="250px" height="300px">
-						<p class="fw-bold fs-5">Dr. Mathue Samuel</p>
-						<p class="fs-7">(Chief Doctor)</p>
-					</div>
-				</div>
-			</div>
+    <div class="box-container">
 
-		</div>
+        <div class="box">
+            <i class="fas fa-notes-medical"></i>
+            <h3>free checkups</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
 
-	</div>
+        <div class="box">
+            <i class="fas fa-ambulance"></i>
+            <h3>24/7 ambulance</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-user-md"></i>
+            <h3>expert doctors</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-pills"></i>
+            <h3>medicines</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-procedures"></i>
+            <h3>bed facility</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-heartbeat"></i>
+            <h3>total care</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span> us </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="img/about-img.svg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>we take care of your healthy life</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ducimus, quod ex cupiditate ullam in assumenda maiores et culpa odit tempora ipsam qui, quisquam quis facere iste fuga, minus nesciunt.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus vero ipsam laborum porro voluptates voluptatibus a nihil temporibus deserunt vel?</p>
+            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+		<section class="doctors" id="doctors">
+
+    <h1 class="heading"> Các <span>bác sĩ</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="img/dr-hung.jpg" alt="">
+            <h3>Dr. Hưng</h3>
+            <span>expert doctor</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/doc-2.jpg" alt="">
+            <h3>john deo</h3>
+            <span>expert doctor</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/doc-3.jpg" alt="">
+            <h3>john deo</h3>
+            <span>expert doctor</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/doc-4.jpg" alt="">
+            <h3>john deo</h3>
+            <span>expert doctor</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/doc-5.jpg" alt="">
+            <h3>john deo</h3>
+            <span>expert doctor</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/doc-6.jpg" alt="">
+            <h3>john deo</h3>
+            <span>expert doctor</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
 		</div>
 	</div>
 	

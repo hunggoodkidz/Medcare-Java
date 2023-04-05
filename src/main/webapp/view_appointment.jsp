@@ -12,9 +12,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <title>Insert title here</title>
-<%@include file="component/allcss.jsp"%>
+<%@include file="component/allcss2.jsp"%>
 <style type="text/css">
 .paint-card {
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -22,8 +22,8 @@
 
 .backImg {
 	background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
-		url("img/hospital.jpg");
-	height: 20vh;
+		url("img/hospital2.jpg");
+	height: 30vh;
 	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -34,7 +34,7 @@
 	<c:if test="${empty userObj }">
 		<c:redirect url="user_login.jsp"></c:redirect>
 	</c:if>
-	<%@include file="component/navbar.jsp"%>
+	<%@include file="component/navbar2.jsp"%>
 
 	<div class="container-fulid backImg p-5">
 		<p class="text-center fs-2 text-white"></p>
