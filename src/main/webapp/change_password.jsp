@@ -42,12 +42,12 @@
 					<div class="card-body">
 						<form action="userChangePassword" method="post">
 							<div class="mb-3">
-								<label>Enter New Password</label> <input type="text"
+								<label>Enter New Password</label> <input type="password"
 									name="newPassword" class="form-control" required>
 							</div>
 
 							<div class="mb-3">
-								<label>Enter Old Password</label> <input type="text"
+								<label>Enter Old Password</label> <input type="password"
 									name="oldPassword" class="form-control" required>
 							</div>
 							<input type="hidden" value="${userObj.id }" name="uid">

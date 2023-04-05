@@ -61,7 +61,7 @@
         <div class="col-lg-12">
             <div class="card card-outline-primary">
                 <div class="card-header">
-                    <h4 class="m-b-0 text-white p-10 text-center align-items-center">Add Doctor</h4>
+                    <h4 class="m-b-0 text-white p-10 text-center align-items-center">Update Doctor</h4>
                 </div>
                 <div class="card-body">
                     <form action="../updateDoctor" method='post' >
