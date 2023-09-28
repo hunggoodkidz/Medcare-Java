@@ -1,4 +1,4 @@
-# Medcare - Java Spring Boot
+# Medcare - Java 
 
 
 [<img src="https://github.com/hunggoodkidz/Medcare-Java/raw/ChanHung-Ninzy/image/app_icon.jpg" align="left"
@@ -32,7 +32,7 @@ Java with Servlet, some database in MySQL connected with XAMMP
 
 ## Screenshots
 
-Still in development on Front-end because you looks so bad
+I'm about to updating screenshots including web layout, features,.. so soon
 
 
 
